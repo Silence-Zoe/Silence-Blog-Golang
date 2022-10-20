@@ -1,2 +1,1 @@
-# Silence-Blog-Golang
-基于Golang+Vue的前后端分离个人博客
+转Golang了，打算把之前个人博客的后端用Go重构一遍。
