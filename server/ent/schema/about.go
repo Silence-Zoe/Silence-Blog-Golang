@@ -1,6 +1,9 @@
 package schema
 
-import "entgo.io/ent"
+import (
+	"entgo.io/ent"
+	"entgo.io/ent/schema/field"
+)
 
 // About holds the schema definition for the About entity.
 type About struct {
@@ -9,7 +12,10 @@ type About struct {
 
 // Fields of the About.
 func (About) Fields() []ent.Field {
-	return nil
+	return []ent.Field{
+		field.String("title").NotEmpty(),
+		field.String("content").Optional(),
+	}
 }
 
 // Edges of the About.
